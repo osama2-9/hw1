@@ -1,0 +1,270 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: content-box;
+    float: left;
+    overflow: hidden;
+   
+   
+}
+body{
+width: 100vh;
+height: 120vh;
+}
+
+.nav{
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-bottom: 5px solid indianred;
+    width: 100%;
+    height: 35px;
+    background-color: var(--back-color);
+    color: white;
+    z-index: 10;
+
+
+}
+:root{
+    --back-color:#8AAAE5;
+    --font-color:black;
+    --icon-color:white;
+
+
+}
+
+.nav i{
+    position: relative;
+    top: 8px;
+    left: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+.side-nav{
+    transform: translateX(-100%
+    );
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 8%;
+    height:100%;
+    background-color: #8aaae592;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    text-align: center;
+    transition: .3s ease-in-out;
+    border-right: 5px solid indianred;
+
+
+
+}
+.side-nav.open{
+    transform: translateX(-0%
+    );
+
+}
+
+.side-nav > a{
+    width: 100%;
+    height: fit-content;
+    color: var(--icon-color);
+    text-decoration: none;
+    margin-bottom:50px;
+    font-size: 26px;
+    transition: .2s ease-in-out;
+}
+
+.side-nav > i{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 27px;
+    top: 90%;
+    left:45%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: indianred;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+
+}
+.side-nav > i:hover{
+    background-color: transparent;
+    color: indianred;
+
+}
+.side-nav > a:hover{
+    color: indianred;
+}
+
+.p1{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100%
+    ;
+    
+    
+    
+}
+.name{
+    position: absolute;
+    top: 22%;
+}
+.title-ani{
+    position: absolute;
+    top: 10%;
+    font-size: 22px;
+    font-weight: 500;
+    left: 45%;
+    line-height: 1;
+    mix-blend-mode: difference;
+    color: rgb(0, 0, 0);
+}
+
+.title-ani::before{
+    position: absolute;
+    content: '';
+    background-color: var(--back-color);
+    top: 0;
+    left: 0;
+    width: 25px;
+    height:100%;
+    animation: move 5s forwards infinite;
+    z-index: -1;
+    border-radius: 50%;
+}    
+.card-1 {
+    position: absolute;
+    top: 55%;
+    width:250px;
+    height: 300px;
+    background-color: var(--back-color);
+    color: var(--icon-color);
+    border-radius: 20px;
+    left: 10%;
+    box-shadow: 7px 13px 5px 2px #ddd;
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    flex-direction: column;
+    letter-spacing: .5px;
+    font-size: 22px;
+    
+}
+.card-1 >a{
+    text-decoration: none;
+    color: white;
+    transition: .3s ease-in-out;
+    
+}
+.card-1 >a:hover{
+    color: indianred;
+}
+
+.card-2{
+    position: absolute;
+    top: 55%;
+    width:250px;
+    height: 300px;
+    background-color: var(--back-color);
+    color: var(--icon-color);
+    border-radius: 20px;
+    left: 45%;
+    box-shadow: 7px 13px 5px 2px #ddd;
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    flex-direction: column;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+.card-2 >a{
+    text-decoration: none;
+    color: white;
+    transition: .3s ease-in-out;
+
+}
+
+.card-2 > a:hover{
+    color: indianred;
+}
+.card-3{
+    position: absolute;
+    top: 55%;
+    width:250px;
+    height: 300px;
+    background-color: var(--back-color);
+    color: var(--icon-color);
+    border-radius: 20px;
+    left: 80%;
+    box-shadow: 7px 13px 5px 2px #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+
+
+}
+.card-3 > a{
+margin: 10px;
+color: white;
+transition: .3s ease-in-out;
+
+}
+.card-3 > a:hover{
+   
+    color: indianred;
+}
+
+.skill{
+position: absolute;
+top: 90%;
+
+
+}
+.skill-name{
+    display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+
+
+
+
+@keyframes move {
+    0% , 100%{
+        left: 0;
+
+
+    }    
+    50%{
+        left: 100%;
+        
+    }    
+
+   
+    
+}    
+
+
+
+
